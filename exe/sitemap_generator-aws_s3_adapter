@@ -1,3 +1,0 @@
-#!/usr/bin/env ruby
-
-require "sitemap_generator/aws_s3_adapter"

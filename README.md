@@ -1,8 +1,10 @@
 # SitemapGenerator::AwsS3Adapter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sitemap_generator/aws_s3_adapter`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a yet another AWS S3 adapter for [sitemap_generator](https://github.com/kjvarga/sitemap_generator), built with official [aws-sdk](https://rubygems.org/gems/aws-sdk) v2.
 
-TODO: Delete this and the text above, and describe your gem
+## Motivation
+
+fog introduces [bunch of runtime dependencies](https://rubygems.org/gems/fog). :weary:
 
 ## Installation
 
@@ -14,15 +16,24 @@ gem 'sitemap_generator-aws_s3_adapter'
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sitemap_generator-aws_s3_adapter
+```console
+$ bundle
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Add following lines to your app's `config/sitemap.rb`.
+
+```ruby
+SitemapGenerator::Sitemap.adapter = SitemapGenerator::AwsS3Adapter.new(
+  access_key_id: '...',
+  secret_access_key: '...',
+  region: '...',
+  bucket_name: '...'
+)
+```
+
+If the specified bucket doesn't exist, it will create in the region automatically.
 
 ## Development
 
@@ -34,8 +45,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sitemap_generator-aws_s3_adapter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
