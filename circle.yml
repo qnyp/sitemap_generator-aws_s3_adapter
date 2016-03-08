@@ -1,0 +1,5 @@
+machine:
+  timezone:
+    US/Pacific
+  ruby:
+    version: 2.3.0
