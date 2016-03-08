@@ -1,5 +1,7 @@
 # SitemapGenerator::AwsS3Adapter
 
+[![Circle CI](https://circleci.com/gh/qnyp/sitemap_generator-aws_s3_adapter.svg?style=svg)](https://circleci.com/gh/qnyp/sitemap_generator-aws_s3_adapter)
+
 This is a yet another AWS S3 adapter for [sitemap_generator](https://github.com/kjvarga/sitemap_generator), built with official [aws-sdk](https://rubygems.org/gems/aws-sdk) v2.
 
 ## Motivation
@@ -43,7 +45,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sitemap_generator-aws_s3_adapter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/qnyp/sitemap_generator-aws_s3_adapter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
