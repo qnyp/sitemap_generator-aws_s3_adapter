@@ -1,4 +1,3 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sitemap_generator/aws_s3_adapter/version'
@@ -9,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Junya Ogura', 'qnyp, inc.']
   spec.email         = ['junyaogura@gmail.com']
 
-  spec.summary       = %q(Yet another AWS S3 adapter for sitemap_generator gem.)
-  spec.description   = %q(Yet another AWS S3 adapter for sitemap_generator gem. This adapter works with official aws-sdk gem instead of fog.)
+  spec.summary       = 'Yet another AWS S3 adapter for sitemap_generator gem.'
+  spec.description   = 'Yet another AWS S3 adapter for sitemap_generator gem. This adapter works with official aws-sdk gem instead of fog.'
   spec.homepage      = 'https://github.com/qnyp/sitemap_generator-aws_s3_adapter'
   spec.license       = 'MIT'
 
