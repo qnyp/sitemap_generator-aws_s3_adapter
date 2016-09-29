@@ -1,3 +1,9 @@
+# [NOTICE]
+
+If you use sitemap_generator 5.2.0 or later, you don't need to use this gem anymore.
+
+- [AWS S3 adapter using the bare aws-sdk gem by lucas-nelson · Pull Request #219 · kjvarga/sitemap_generator](https://github.com/kjvarga/sitemap_generator/pull/219)
+
 # SitemapGenerator::AwsS3Adapter
 
 [![Circle CI](https://circleci.com/gh/qnyp/sitemap_generator-aws_s3_adapter.svg?style=svg)](https://circleci.com/gh/qnyp/sitemap_generator-aws_s3_adapter)
